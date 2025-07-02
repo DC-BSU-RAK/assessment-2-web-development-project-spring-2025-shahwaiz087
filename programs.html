@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore More - Learning Hub</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Explore More Learning Hub</h1>
+            <p class="subtitle">Discover amazing topics and expand your knowledge!</p>
+        </header>
+
+        <div class="topics-grid">
+            <div class="topic-card" onclick="openModal('science')">
+                <div class="topic-icon">🔬</div>
+                <h3 class="topic-title">Science & Nature</h3>
+                <p class="topic-description">Explore the wonders of our world through fascinating scientific discoveries and natural phenomena.</p>
+                <button class="explore-btn">Explore Science</button>
+            </div>
+
+            <div class="topic-card" onclick="openModal('history')">
+                <div class="topic-icon">🏛️</div>
+                <h3 class="topic-title">History & Culture</h3>
+                <p class="topic-description">Journey through time and discover amazing civilizations, events, and cultural treasures.</p>
+                <button class="explore-btn">Explore History</button>
+            </div>
+
+            <div class="topic-card" onclick="openModal('space')">
+                <div class="topic-icon">🚀</div>
+                <h3 class="topic-title">Space & Universe</h3>
+                <p class="topic-description">Blast off into the cosmos and learn about planets, stars, and the mysteries of space.</p>
+                <button class="explore-btn">Explore Space</button>
+            </div>
+
+            <div class="topic-card" onclick="openModal('technology')">
+                <div class="topic-icon">💻</div>
+                <h3 class="topic-title">Technology & Innovation</h3>
+                <p class="topic-description">Discover how technology shapes our world and the cool inventions of today and tomorrow.</p>
+                <button class="explore-btn">Explore Tech</button>
+            </div>
+
+            <div class="topic-card" onclick="openModal('arts')">
+                <div class="topic-icon">🎨</div>
+                <h3 class="topic-title">Arts & Creativity</h3>
+                <p class="topic-description">Express yourself through various art forms and learn about famous artists and their masterpieces.</p>
+                <button class="explore-btn">Explore Arts</button>
+            </div>
+
+            <div class="topic-card" onclick="openModal('geography')">
+                <div class="topic-icon">🌍</div>
+                <h3 class="topic-title">Geography & World</h3>
+                <p class="topic-description">Travel around the globe and discover amazing places, cultures, and geographical wonders.</p>
+                <button class="explore-btn">Explore World</button>
+            </div>
+        </div>
+
+        <div class="fun-facts">
+            <h2>🎯 Daily Fun Facts</h2>
+            <div class="fact-item">
+                <strong>Did you know?</strong> A group of flamingos is called a "flamboyance"!
+            </div>
+            <div class="fact-item">
+                <strong>Amazing fact:</strong> The human brain contains about 86 billion neurons!
+            </div>
+            <div class="fact-item">
+                <strong>Cool discovery:</strong> Honey never spoils - archaeologists have found edible honey in ancient Egyptian tombs!
+            </div>
+            <div class="fact-item">
+                <strong>Space wonder:</strong> One day on Venus is longer than one year on Venus!
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
